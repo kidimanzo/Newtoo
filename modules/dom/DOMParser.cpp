@@ -16,11 +16,11 @@ namespace Newtoo
                 ret->appendChild(output[i]);
             return ret;
         }
-        else if(type == ImageSvgXml) // SVG парсер
+        if(type == ImageSvgXml) // SVG парсер
         {
             return 0;
         }
-        else if(type == TextXml or type == ApplicationXml) // XML парсер
+        if(type == TextXml or type == ApplicationXml) // XML парсер
         {
             return 0;
         }
